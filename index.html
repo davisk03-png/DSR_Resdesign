@@ -3,11 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page Title</title>
+  <title>DS + R | Diller Scofidio + Renfro</title>
+  <link rel="stylesheet" href="https://use.typekit.net/mpw2kof.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" language="javascript"></script>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+  <main>
+    <section class="hero" id="home">
+      <img class="hero__image" src="assets/hero-full.png" alt="Diller Scofidio + Renfro project">
+      <div class="hero__gradient"></div>
+      <header class="site-header">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#home">home</a><a href="projects.html#projects-top">projects</a>
+          <a href="meet-us.html#meet-top">meet us</a><a href="#news">news</a><a href="#contact">contact</a>
+        </nav>
+      </header>
+    </section>
 
+    <section class="carousel" id="projects" aria-label="Featured projects">
+      <button class="carousel__arrow carousel__arrow--prev" type="button" aria-label="Previous featured project"><img src="assets/carousel-arrow-prev.svg" alt=""></button>
+      <div class="carousel__track">
+        <img class="carousel__side carousel__side--left" src="assets/carousel-left.png" alt="Featured project">
+        <img class="carousel__center" src="assets/carousel-center.png" alt="Featured project">
+        <img class="carousel__side carousel__side--right" src="assets/carousel-right.png" alt="Featured project">
+      </div>
+      <button class="carousel__arrow carousel__arrow--next" type="button" aria-label="Next featured project"><img src="assets/carousel-arrow-next.svg" alt=""></button>
+      <div class="carousel__dots" role="tablist" aria-label="Featured project slides">
+        <button class="dot is-active" type="button" aria-label="Slide 1" aria-selected="true"></button>
+        <button class="dot" type="button" aria-label="Slide 2" aria-selected="false"></button>
+        <button class="dot" type="button" aria-label="Slide 3" aria-selected="false"></button>
+        <button class="dot" type="button" aria-label="Slide 4" aria-selected="false"></button>
+        <button class="dot" type="button" aria-label="Slide 5" aria-selected="false"></button>
+      </div>
+    </section>
+
+    <section class="studio" id="studio">
+      <img class="studio__logo" src="assets/dsr-logo.png" alt="Diller Scofidio + Renfro">
+      <p class="studio__copy"><strong>Diller Scofidio + Renfro</strong> is an American interdisciplinary design studio which <strong>integrates architecture, the visual arts, and the performing arts.</strong> Based in New York City, the studio was founded by architects Elizabeth Diller and Ricardo Scofidio in 1981. Charles Renfro joined in 1997, and was named partner in 2004.</p>
+    </section>
+
+    <section class="news" id="news">
+      <h1>recent<br><strong>news</strong></h1>
+      <div class="news__grid">
+        <article class="news-card">
+          <img src="assets/news-diller.png" alt="Elizabeth Diller portrait">
+          <a href="#news" aria-label="Read Elizabeth Diller Wins 2026 Architect of Record Award"><span>Elizabeth Diller Wins 2026</span><strong>Architect of RECORD Award</strong></a>
+          <span class="news-card__arrow"><img src="assets/news-arrow.svg" alt=""></span>
+        </article>
+        <article class="news-card">
+          <img src="assets/news-mit.png" alt="Architecture at MIT">
+          <a href="#news" aria-label="Read A Warehouse is Converted Into the New Home for Architecture at MIT"><span>A Warehouse is Converted</span><span>Into the</span><strong>New Home for Architecture at MIT</strong></a>
+          <span class="news-card__arrow"><img src="assets/news-arrow.svg" alt=""></span>
+        </article>
+        <article class="news-card">
+          <img src="assets/news-pinup.png" alt="NYC Architects">
+          <a href="#news" aria-label="Read Pin-Up's NYC Architects"><span>Pin-Up’s</span><strong>NYC Architects</strong></a>
+          <span class="news-card__arrow"><img src="assets/news-arrow.svg" alt=""></span>
+        </article>
+        <article class="news-card">
+          <img src="assets/news-view.png" alt="Interior room view">
+          <a href="#news" aria-label="Read Room with a view"><span>Room with</span><strong>a view</strong></a>
+          <span class="news-card__arrow"><img src="assets/news-arrow.svg" alt=""></span>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <p><strong>DILLER SCOFIDIO + RENFRO:</strong> 601 W. 26th Street, Suite 1815 New York, NY 10001 212.260.7971 / disco@dsrny.com<br><br><strong>BUSINESS DEVELOPMENT:</strong> 212.260.7971 / bd@dsrny.com<br><br><strong>PRESS:</strong> 212.260.7971 / press@dsrny.com<br><br><strong>RESOURCE LIBRARIAN:</strong> 212.260.7971 / mbroaddus@dsrny.com / Mary Broaddus<br><br><strong>APPLICATIONS:</strong> No phone calls please / jobs@dsrny.com</p>
+      <a class="footer-logo" href="#home" aria-label="Return to home"><img src="assets/footer-mark.png" alt=""></a>
+    </footer>
+  </main>
 </body>
 </html>
