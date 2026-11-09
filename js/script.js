@@ -6,6 +6,29 @@ const previousButton = carousel?.querySelector(".carousel__arrow--prev");
 const nextButton = carousel?.querySelector(".carousel__arrow--next");
 let transitionId = 0;
 
+document.querySelectorAll(".site-header").forEach((header) => {
+  const menuToggle = header.querySelector(".menu-toggle");
+  const siteNav = header.querySelector(".site-nav");
+  if (!menuToggle || !siteNav) return;
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+    menuToggle.setAttribute("aria-expanded", String(!isOpen));
+    menuToggle.querySelector(".sr-only").textContent = isOpen
+      ? "Open navigation menu"
+      : "Close navigation menu";
+    siteNav.classList.toggle("is-open", !isOpen);
+  });
+
+  siteNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.querySelector(".sr-only").textContent = "Open navigation menu";
+      siteNav.classList.remove("is-open");
+    });
+  });
+});
+
 const slides = [
   ["assets/carousel-left.png", "assets/carousel-center.png", "assets/carousel-right.png"],
   ["assets/carousel-center.png", "assets/carousel-right.png", "assets/project-juilliard.png"],

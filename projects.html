@@ -6,6 +6,7 @@
   <title>Projects | Diller Scofidio + Renfro</title>
   <link rel="stylesheet" href="https://use.typekit.net/mpw2kof.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body class="projects-page">
   <main>
@@ -14,7 +15,11 @@
       <img class="projects-hero__gradient" src="assets/projects-gradient.png" alt="">
       <header class="site-header projects-header">
         <a class="page-logo" href="index.html#home" aria-label="DS + R home"><img src="assets/white-lone-8-1.png" alt="DS + R"></a>
-        <nav class="site-nav" aria-label="Primary navigation">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Open navigation menu</span>
+        </button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
           <a href="index.html#home">home</a><a href="#projects-top" aria-current="page">projects</a>
           <a href="meet-us.html#meet-top">meet us</a><a href="index.html#news">news</a><a href="index.html#contact">contact</a>
         </nav>
